@@ -53,5 +53,6 @@ function isValidLength(input) {
 ---
 ### Solution
 
-I'm guessing that any % in password break their system otherwise someone would change regex to /^[^\s]{8,}/ by now.
-Adding an alert that passwords cannot contain % might be a good idea.
+Change regex to /^[^\s]{8,}/
+or
+Add a note that you cannot use %
