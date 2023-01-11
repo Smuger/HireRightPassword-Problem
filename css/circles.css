@@ -1,0 +1,383 @@
+/* Status circles fresh edition
+----------------------------------------------------------------------------------- */
+.circlesContainer {
+    padding: 0 10px 20px 10px;
+    width: 560px;
+    margin: 0 auto;
+} 
+
+.circleTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.circleTable .circle {
+    width: 22%;
+    padding: 0;
+    vertical-align: top;
+}
+
+.circleTable .circle div {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.circleTable .circle div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.circleLine {
+    width: 17%;
+    vertical-align: middle;
+}
+
+.circleLine div {
+    height: 5px;
+    margin: 0 -2px 0 -2px;
+}
+
+/* Circle colors
+*/
+
+.circleTable .circle.circleGray div {
+    background: #cccccc;
+}
+
+.circleTable .circle.circleRedYellow div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e54e05+0,fc7700+100 */
+    background: rgb(229,78,5); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(229,78,5,1) 0%, rgba(252,119,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(229,78,5,1)), color-stop(100%,rgba(252,119,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* W3C */
+}
+
+[dir='rtl'] .circleTable .circle.circleRedYellow div {
+    background: rgb(229,78,5); /* Old browsers */
+    background: -moz-linear-gradient(right,  rgba(229,78,5,1) 0%, rgba(252,119,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(229,78,5,1)), color-stop(100%,rgba(252,119,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(right,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(right,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(right,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to left,  rgba(229,78,5,1) 0%,rgba(252,119,0,1) 100%); /* W3C */
+}
+
+.circleTable .circle.circleGreen div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+    background: rgb(122,188,65); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+[dir='rtl'] .circleTable .circle.circleGreen div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+    background: rgb(122,188,65); /* Old browsers */
+    background: -moz-linear-gradient(right,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.circleTable .circle.circleBlue div {
+    background: #a9d8fa;
+}
+
+.circleLine.lineTransparent div {
+    background-color: transparent;
+}
+
+.circleLine.lineBlue div {
+    background-color: #a9d8fa;
+}
+
+.circleLine.lineYellowBlue div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc7700+0,a9d8fa+100 */
+    background: rgb(252,119,0); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(252,119,0,1) 0%, rgba(169,216,250,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,119,0,1)), color-stop(100%,rgba(169,216,250,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7700', endColorstr='#a9d8fa',GradientType=1 ); /* IE6-9 */
+}
+
+[dir='rtl'] .circleLine.lineYellowBlue div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc7700+0,a9d8fa+100 */
+    background: rgb(252,119,0); /* Old browsers */
+    background: -moz-linear-gradient(right,  rgba(252,119,0,1) 0%, rgba(169,216,250,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(252,119,0,1)), color-stop(100%,rgba(169,216,250,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(right,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(right,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(right,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* IE10+ */
+    background: linear-gradient(to left,  rgba(252,119,0,1) 0%,rgba(169,216,250,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9d8fa', endColorstr='#fc7700',GradientType=1 ); /* IE6-9 */
+}
+
+.circleLine.lineGreenBlue div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ee4b6+0,a9d8fa+100 */
+    background: rgb(158,228,182); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(158,228,182,1) 0%, rgba(169,216,250,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(158,228,182,1) 0%,rgba(169,216,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(158,228,182,1) 0%,rgba(169,216,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee4b6', endColorstr='#a9d8fa',GradientType=1 ); /* IE6-9 */
+}
+
+[dir='rtl'] .circleLine.lineGreenBlue div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ee4b6+0,a9d8fa+100 */
+    background: rgb(158,228,182); /* Old browsers */
+    background: -moz-linear-gradient(right,  rgba(158,228,182,1) 0%, rgba(169,216,250,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(right,  rgba(158,228,182,1) 0%,rgba(169,216,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left,  rgba(158,228,182,1) 0%,rgba(169,216,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9d8fa', endColorstr='#9ee4b6',GradientType=1 ); /* IE6-9 */
+}
+
+.circleLine.lineYellowRed div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc7700+0,e54e05+100 */
+    background: #fc7700; /* Old browsers */
+    background: -moz-linear-gradient(left,  #fc7700 0%, #e54e05 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #fc7700 0%,#e54e05 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #fc7700 0%,#e54e05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7700', endColorstr='#e54e05',GradientType=1 ); /* IE6-9 */
+}
+
+[dir='rtl'] .circleLine.lineYellowRed div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc7700+0,e54e05+100 */
+    background: #fc7700; /* Old browsers */
+    background: -moz-linear-gradient(left,  #e54e05 0%, #fc7700 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #e54e05 0%, #fc7700 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #e54e05 0%, #fc7700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e54e05', endColorstr='#fc7700',GradientType=1 ); /* IE6-9 */
+}
+
+
+/* Status circles Titles
+----------------------------------------------------------------------------------- */
+
+.circleTitleTable {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.circleTitleTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circleTitleTable td:nth-child(1),
+.circleTitleTable td:nth-child(3) {
+    width: 22%;
+}
+
+.circleTitleTable {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+} 
+
+.textGray {
+    color: #cccccc;
+}
+
+.textRedYellow {
+    color: #f06202;
+}
+
+.textBlue {
+    color: #a9d8fa;
+}
+
+.textGreen {
+    color: #7ABC41;
+}
+
+@supports (-webkit-background-clip: text) {
+    .textRedYellow span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb1f00+0,fc963c+100 */
+        background: rgb(203,31,0); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(203,31,0,1) 0%, rgba(252,150,60,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(203,31,0,1)), color-stop(100%,rgba(252,150,60,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb1f00', endColorstr='#fc963c',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        color: transparent;    
+    }
+
+    [dir='rtl'] .textRedYellow span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb1f00+0,fc963c+100 */
+        background: rgb(203,31,0); /* Old browsers */
+        background: -moz-linear-gradient(right,  rgba(203,31,0,1) 0%, rgba(252,150,60,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(203,31,0,1)), color-stop(100%,rgba(252,150,60,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* IE10+ */
+        background: linear-gradient(to left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc963c', endColorstr='#cb1f00',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+
+    .textGreen span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+        background: rgb(122,188,65); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abc41', endColorstr='#9ee4b6',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    [dir='rtl'] .textGreen span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+        background: rgb(122,188,65); /* Old browsers */
+        background: -moz-linear-gradient(right,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee4b6', endColorstr='#7abc41',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+}
+
+@supports (background-clip: text) {
+    .textRedYellow span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb1f00+0,fc963c+100 */
+        background: rgb(203,31,0); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(203,31,0,1) 0%, rgba(252,150,60,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(203,31,0,1)), color-stop(100%,rgba(252,150,60,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb1f00', endColorstr='#fc963c',GradientType=1 ); /* IE6-9 */
+        background-clip: text;
+        color: transparent;    
+    }
+
+    [dir='rtl'] .textRedYellow span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb1f00+0,fc963c+100 */
+        background: rgb(203,31,0); /* Old browsers */
+        background: -moz-linear-gradient(right,  rgba(203,31,0,1) 0%, rgba(252,150,60,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(203,31,0,1)), color-stop(100%,rgba(252,150,60,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(right,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* IE10+ */
+        background: linear-gradient(to left,  rgba(203,31,0,1) 0%,rgba(252,150,60,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc963c', endColorstr='#cb1f00',GradientType=1 ); /* IE6-9 */
+        background-clip: text;
+        color: transparent;
+    }
+
+    .textGreen span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+        background: rgb(122,188,65); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abc41', endColorstr='#9ee4b6',GradientType=1 ); /* IE6-9 */
+        background-clip: text;
+        color: transparent;
+    }
+
+    [dir='rtl'] .textGreen span {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abc41+0,9ee4b6+100 */
+        background: rgb(122,188,65); /* Old browsers */
+        background: -moz-linear-gradient(right,  rgba(122,188,65,1) 0%, rgba(158,228,182,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,  rgba(122,188,65,1) 0%,rgba(158,228,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee4b6', endColorstr='#7abc41',GradientType=1 ); /* IE6-9 */
+        background-clip: text;
+        color: transparent;
+    }
+
+}
+
+/* responsive declaration 640px
+----------------------------------------------------------------------------*/
+@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
+    .circlesContainer {
+        padding: 0 0 20px 0;
+        width: auto;
+    } 
+
+    .circleTable .circle {
+        width: 28%;
+    }
+
+    .circleLine {
+        width: 8%;
+        vertical-align: middle;
+    }
+
+    .circleTitleTable td:nth-child(1),
+    .circleTitleTable td:nth-child(3) {
+        width: 28%;
+    }
+
+    .circleTable .circle div {
+        padding: 6px;
+    }
+    .circleLine div {
+        height: 6px;
+    }
+
+    .circleTable {
+        margin-top: 15px;
+    }
+
+    .circleTitleTable {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+/* responsive declaration 480px
+----------------------------------------------------------------------------*/
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .circleTable .circle {
+        width: 32%;
+    }
+
+    .circleLine {
+        width: 2%;
+        vertical-align: middle;
+    }
+
+    .circleTitleTable td:nth-child(1),
+    .circleTitleTable td:nth-child(3) {
+        width: 32%;
+    }
+
+    .circleTable .circle div {
+        padding: 4px;
+    }
+    .circleLine div {
+        height: 4px;
+    }
+
+    .circleTable {
+        margin-top: 8px;
+    }
+
+    .circleTitleTable {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

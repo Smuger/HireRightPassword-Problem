@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'DaxMedium';
+    src: url('fonts/dax/dax_medium-webfont.eot');
+    src: url('fonts/dax/dax_medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/dax/dax_medium-webfont.woff2') format('woff2'),
+    url('fonts/dax/dax_medium-webfont.woff') format('woff'),
+    url('fonts/dax/dax_medium-webfont.ttf') format('truetype'),
+    url('fonts/dax/dax_medium-webfont.svg#daxmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

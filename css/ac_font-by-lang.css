@@ -1,0 +1,24 @@
+body {
+    font-family: 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+:lang(ar) 	{
+    font-family: 'Noto Sans Arabic', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+:lang(th) 	{
+    font-family: 'Noto Sans Thai', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+:lang(zh) 	{
+    font-family: 'Noto Sans CJKsc', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+:lang(zt) 	{
+    font-family: 'Noto Sans CJKsc', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+:lang(ja) 	{
+    font-family: 'Noto Sans CJKsc', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+:lang(ko) 	{
+    font-family: 'Noto Sans CJKsc', 'Noto Sans', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
