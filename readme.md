@@ -1,10 +1,31 @@
-# Passwords containing %
+# [New Account] Passwords containing %
 
-### HireRight uses /^[^%\s]{8,}/ for checking their password length rule *isValidLength()*
+### HireRight uses weird regex for checking password length *isValidLength()*
+
+
+
+
+### Regex:
+
+```
+
+/^[^%\s]{8,}/
+
+```
+
+
+
+
+
+Demo website:
 
 ---
 
+https://smuger.github.io/HireRightPassword-Problem/
 
+---
+
+![issue](./issue.gif)
 
 
 #### Which means that
@@ -17,6 +38,9 @@
 
 
 
+---
+
+
 ### Code
 
 ```javascript
@@ -25,3 +49,9 @@ function isValidLength(input) {
     return reg.test(input);
 }
 ```
+
+---
+### Solution
+
+I'm guessing that any % in password break their system otherwise someone would change regex to /^[^\s]{8,}/ by now.
+Adding an alert that passwords cannot contain % might be a good idea.
